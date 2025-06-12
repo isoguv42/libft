@@ -11,9 +11,8 @@
 ╚══════╝╚═╝╚═════╝ ╚═╝        ╚═╝   
 </pre>
 
-<div align="center">
-🚀 Production-Ready C Library with 56 Functions  
-Includes libft + ft_printf + get_next_line
+**🚀 Production-Ready C Library with 56 Functions 🚀**  
+*Includes libft + ft_printf + get_next_line*
 
 [![libft](https://raw.githubusercontent.com/ayogun/42-project-badges/main/badges/libftm.png)](https://github.com/42School)
 [![get_next_line](https://raw.githubusercontent.com/ayogun/42-project-badges/main/badges/get_next_linem.png)](https://github.com/42School)
@@ -33,8 +32,6 @@ Includes libft + ft_printf + get_next_line
 [![Files](https://img.shields.io/badge/Source_Files-52-blue?style=flat-square)](src/)
 [![Categories](https://img.shields.io/badge/Categories-8-blue?style=flat-square)](src/)
 [![Library Size](https://img.shields.io/badge/Library_Size-47KB-orange?style=flat-square)](libft.a)
-
-*A complete C library including libft, ft_printf, and get_next_line*
 
 </div>
 
