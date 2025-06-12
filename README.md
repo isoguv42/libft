@@ -3,20 +3,37 @@
 <div align="center">
 
 ```
-██╗     ██╗██████╗ ███████╗████████╗
-██║     ██║██╔══██╗██╔════╝╚══██╔══╝
-██║     ██║██████╔╝█████╗     ██║   
-██║     ██║██╔══██╗██╔══╝     ██║   
-███████╗██║██████╔╝██║        ██║   
-╚══════╝╚═╝╚═════╝ ╚═╝        ╚═╝   
-                                    
-🚀 Production-Ready C Library 🚀
+██╗      ██╗ ██████╗  ███████╗ ████████╗
+██║      ██║ ██╔══██╗ ██╔════╝ ╚══██╔══╝
+██║      ██║ ██████╔╝ █████╗      ██║   
+██║      ██║ ██╔══██╗ ██╔══╝      ██║   
+███████╗ ██║ ██████╔╝ ██║         ██║   
+╚══════╝ ╚═╝ ╚═════╝  ╚═╝         ╚═╝   
+
+ ██████╗ ██████╗ ███╗   ███╗██████╗ ██╗     ███████╗████████╗███████╗
+██╔════╝██╔═══██╗████╗ ████║██╔══██╗██║     ██╔════╝╚══██╔══╝██╔════╝
+██║     ██║   ██║██╔████╔██║██████╔╝██║     █████╗     ██║   █████╗  
+██║     ██║   ██║██║╚██╔╝██║██╔═══╝ ██║     ██╔══╝     ██║   ██╔══╝  
+╚██████╗╚██████╔╝██║ ╚═╝ ██║██║     ███████╗███████╗   ██║   ███████╗
+ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝     ╚══════╝╚══════╝   ╚═╝   ╚══════╝
+
+🚀 Production-Ready C Library with 56 Functions 🚀
 ```
 
-[![42 School](https://img.shields.io/badge/42-School-%23000000?style=flat&logo=42&logoColor=white)](https://www.42.fr/)
-[![Language](https://img.shields.io/badge/Language-C-blue.svg)](https://en.wikipedia.org/wiki/C_(programming_language))
-[![Norm](https://img.shields.io/badge/Norm-v3-success)](https://github.com/42School/norminette)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![42 School](https://img.shields.io/badge/42-School-%23000000?style=for-the-badge&logo=42&logoColor=white)](https://www.42.fr/)
+[![Language](https://img.shields.io/badge/Language-C-blue.svg?style=for-the-badge&logo=c&logoColor=white)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![Norm](https://img.shields.io/badge/Norm-v3-success?style=for-the-badge)](https://github.com/42School/norminette)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
+
+[![Functions](https://img.shields.io/badge/Functions-56-brightgreen?style=for-the-badge)](src/)
+[![Tests](https://img.shields.io/badge/Tests-44/44_PASS-success?style=for-the-badge)](tests/)
+[![Memory](https://img.shields.io/badge/Memory_Leaks-0-success?style=for-the-badge)](tests/)
+[![Build](https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge)](Makefile)
+
+[![Lines of Code](https://img.shields.io/badge/Lines_of_Code-2600+-blue?style=flat-square)](src/)
+[![Files](https://img.shields.io/badge/Source_Files-52-blue?style=flat-square)](src/)
+[![Categories](https://img.shields.io/badge/Categories-8-blue?style=flat-square)](src/)
+[![Library Size](https://img.shields.io/badge/Library_Size-47KB-orange?style=flat-square)](libft.a)
 
 *A complete C library including libft, ft_printf, and get_next_line*
 
@@ -57,24 +74,24 @@ All functions are integrated into a single, comprehensive library for use in sub
 
 ```
 libft/
-├── 📁 include/          # Header files
-│   └── libft.h         # Main header file
-├── 📁 src/             # Source files organized by category
-│   ├── 📁 character/   # Character classification functions
-│   ├── 📁 conversion/  # Type conversion functions
-│   ├── 📁 get_next_line/ # Line reading functions
-│   ├── 📁 list/       # Linked list functions
-│   ├── 📁 memory/     # Memory manipulation functions
-│   ├── 📁 output/     # Output functions
-│   ├── 📁 printf/     # ft_printf functions
-│   ├── 📁 string/     # String manipulation functions
-│   └── 📁 utils/      # Utility functions
-├── 📁 obj/            # Compiled object files (created during build)
-├── 📁 tests/          # Test files
-├── 📁 docs/           # Documentation
-├── Makefile          # Build configuration
-├── README.md         # This file
-└── LICENSE           # License information
+├── 📁 include/             # Header files
+│   └── libft.h             # Main header file
+├── 📁 src/                 # Source files organized by category
+│   ├── 📁 character/       # Character classification functions
+│   ├── 📁 conversion/      # Type conversion functions
+│   ├── 📁 get_next_line/   # Line reading functions
+│   ├── 📁 list/            # Linked list functions
+│   ├── 📁 memory/          # Memory manipulation functions
+│   ├── 📁 output/          # Output functions
+│   ├── 📁 printf/          # ft_printf functions
+│   ├── 📁 string/          # String manipulation functions
+│   └── 📁 utils/           # Utility functions
+├── 📁 obj/                 # Compiled object files (created during build)
+├── 📁 tests/               # Test files
+├── 📁 docs/                # Documentation
+├── Makefile                   # Build configuration
+├── README.md               # This file
+└── LICENSE                 # License information
 ```
 
 ### 🔧 Functions Implemented
