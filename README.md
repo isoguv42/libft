@@ -13,6 +13,7 @@
             🚀 Production-Ready C Library with 56 Functions 🚀
 ```
 
+[![42 Project](https://raw.githubusercontent.com/ayogun/42-project-badges/main/badges/libfte.png)](https://github.com/42School)
 [![42 School](https://img.shields.io/badge/42-School-%23000000?style=for-the-badge&logo=42&logoColor=white)](https://www.42.fr/)
 [![Language](https://img.shields.io/badge/Language-C-blue.svg?style=for-the-badge&logo=c&logoColor=white)](https://en.wikipedia.org/wiki/C_(programming_language))
 [![Norm](https://img.shields.io/badge/Norm-v3-success?style=for-the-badge)](https://github.com/42School/norminette)
