@@ -37,8 +37,6 @@
 
 ---
 
-## English
-
 ### 📖 About
 
 This is an enhanced version of the libft project from 42 School curriculum, which includes three major components:
