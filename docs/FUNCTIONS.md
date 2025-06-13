@@ -13,6 +13,7 @@ Functions for character classification and transformation.
 | `ft_isalnum` | Checks if character is alphanumeric | `int ft_isalnum(int c)` | Non-zero if true, 0 if false |
 | `ft_isascii` | Checks if character is ASCII | `int ft_isascii(int c)` | Non-zero if true, 0 if false |
 | `ft_isprint` | Checks if character is printable | `int ft_isprint(int c)` | Non-zero if true, 0 if false |
+| `ft_isnum` | Checks if string represents valid integer | `int ft_isnum(char *str)` | Non-zero if valid, 0 if invalid |
 | `ft_toupper` | Converts to uppercase | `int ft_toupper(int c)` | Uppercase character or unchanged |
 | `ft_tolower` | Converts to lowercase | `int ft_tolower(int c)` | Lowercase character or unchanged |
 
@@ -70,6 +71,27 @@ Functions for output operations.
 | `ft_putstr_fd` | Outputs string to file descriptor | `void ft_putstr_fd(char *s, int fd)` | None (void) |
 | `ft_putendl_fd` | Outputs string + newline to fd | `void ft_putendl_fd(char *s, int fd)` | None (void) |
 | `ft_putnbr_fd` | Outputs number to file descriptor | `void ft_putnbr_fd(int n, int fd)` | None (void) |
+| `ft_putnbr` | Outputs integer to stdout | `int ft_putnbr(int n)` | Number of characters printed |
+| `ft_puthex` | Outputs unsigned int as hex | `int ft_puthex(unsigned int n, char c)` | Number of characters printed |
+| `ft_putptr` | Outputs pointer as hex | `int ft_putptr(unsigned long ptr, int sign)` | Number of characters printed |
+| `ft_putunsigned` | Outputs unsigned int as decimal | `int ft_putunsigned(unsigned int n)` | Number of characters printed |
+
+### 🖨️ Printf Functions (`src/printf/`)
+
+Functions for formatted output (ft_printf implementation).
+
+| Function | Description | Prototype | Return Value |
+|----------|-------------|-----------|--------------|
+| `ft_printf` | Formatted output function | `int ft_printf(const char *str, ...)` | Number of characters printed |
+| `ft_format` | Format specifier handler | `int ft_format(va_list *args, char c)` | Number of characters printed |
+
+### 📖 Get Next Line Functions (`src/get_next_line/`)
+
+Functions for reading files line by line.
+
+| Function | Description | Prototype | Return Value |
+|----------|-------------|-----------|--------------|
+| `get_next_line` | Reads line from file descriptor | `char *get_next_line(int fd)` | Line read or NULL if EOF/error |
 
 ### 📋 List Functions (`src/list/`) - Bonus
 
@@ -86,6 +108,18 @@ Functions for linked list manipulation.
 | `ft_lstclear` | Deletes entire list | `void ft_lstclear(t_list **lst, void (*del)(void *))` | None (void) |
 | `ft_lstiter` | Applies function to each element | `void ft_lstiter(t_list *lst, void (*f)(void *))` | None (void) |
 | `ft_lstmap` | Applies function and creates new list | `t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))` | Pointer to new list or NULL |
+
+### 🔧 Utility Functions (`src/utils/`)
+
+Additional utility functions for common operations.
+
+| Function | Description | Prototype | Return Value |
+|----------|-------------|-----------|--------------|
+| `ft_digitcount` | Counts digits in an integer | `int ft_digitcount(int n)` | Number of digits |
+| `ft_wordcount` | Counts words separated by delimiter | `size_t ft_wordcount(const char *s, char delimiter)` | Number of words |
+| `ft_free_array` | Frees array up to specified count | `void ft_free_array(char **array, size_t count)` | None (void) |
+| `ft_free_array_null` | Frees null-terminated array | `void ft_free_array_null(char **array)` | None (void) |
+| `ft_free_split` | Frees arrays created by ft_split | `void ft_free_split(char **split)` | None (void) |
 
 ## 📝 Usage Examples
 
@@ -145,6 +179,33 @@ int main(void)
     
     // Clean up
     ft_lstclear(&list, free);
+    return (0);
+}
+```
+
+### Utility Functions
+```c
+#include "libft.h"
+
+int main(void)
+{
+    char *str = "Hello World 42";
+    char **words = ft_split(str, ' ');
+    
+    // Count words
+    size_t count = ft_wordcount(str, ' ');
+    ft_printf("Found %zu words:\n", count);
+    
+    // Print each word
+    for (int i = 0; words[i]; i++)
+        ft_printf("Word %d: %s\n", i + 1, words[i]);
+    
+    // Validate number string
+    if (ft_isnum("42"))
+        ft_printf("'42' is a valid number\n");
+    
+    // Clean up
+    ft_free_split(words);
     return (0);
 }
 ```

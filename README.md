@@ -23,13 +23,13 @@
 [![Norm](https://img.shields.io/badge/Norm-v3-success?style=for-the-badge)](https://github.com/42School/norminette)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
-[![Functions](https://img.shields.io/badge/Functions-56-brightgreen?style=for-the-badge)](src/)
+[![Functions](https://img.shields.io/badge/Functions-58-brightgreen?style=for-the-badge)](src/)
 [![Tests](https://img.shields.io/badge/Tests-44/44_PASS-success?style=for-the-badge)](tests/)
 [![Memory](https://img.shields.io/badge/Memory_Leaks-0-success?style=for-the-badge)](tests/)
 [![Build](https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge)](Makefile)
 
-[![Lines of Code](https://img.shields.io/badge/Lines_of_Code-2600+-blue?style=flat-square)](src/)
-[![Files](https://img.shields.io/badge/Source_Files-52-blue?style=flat-square)](src/)
+[![Lines of Code](https://img.shields.io/badge/Lines_of_Code-2700+-blue?style=flat-square)](src/)
+[![Files](https://img.shields.io/badge/Source_Files-54-blue?style=flat-square)](src/)
 [![Categories](https://img.shields.io/badge/Categories-8-blue?style=flat-square)](src/)
 [![Library Size](https://img.shields.io/badge/Library_Size-47KB-orange?style=flat-square)](libft.a)
 
@@ -48,9 +48,9 @@ All functions are integrated into a single, comprehensive library for use in sub
 
 ### 📊 Project Statistics
 
-- **Total Functions**: 56 (organized in 8 categories)
-- **Source Files**: 52 .c files  
-- **Code Lines**: 1,700+ lines
+- **Total Functions**: 58 (organized in 8 categories)
+- **Source Files**: 54 .c files  
+- **Code Lines**: 1,800+ lines
 - **Test Coverage**: 100% (34/34 main tests + 7/7 utility tests passing)
 - **Memory Leaks**: None (Valgrind tested)
 - **42 Norm**: Fully compliant (0 errors)
@@ -96,6 +96,7 @@ libft/
 - `ft_isalnum` - Check if character is alphanumeric
 - `ft_isascii` - Check if character is ASCII
 - `ft_isprint` - Check if character is printable
+- `ft_isnum` - Check if string represents a valid integer (NEW)
 - `ft_toupper` - Convert to uppercase
 - `ft_tolower` - Convert to lowercase
 
@@ -165,6 +166,7 @@ libft/
 - `ft_wordcount` - Count words in string separated by delimiter
 - `ft_free_array` - Free array of strings up to specified count
 - `ft_free_array_null` - Free null-terminated array of strings
+- `ft_free_split` - Free arrays created by ft_split (NEW)
 
 *Note: These were originally helper functions in ft_itoa and ft_split, now available as general-purpose utilities*
 
