@@ -1,0 +1,137 @@
+# Compiled library files
+*.a
+*.so
+*.dylib
+
+# Object files
+*.o
+*.obj
+obj/
+*.dSYM/
+
+# Executables
+*.exe
+*.out
+a.out
+test
+test_*
+main
+debug
+
+# Debug files
+*.gdb
+*.lldb
+vgcore.*
+core
+core.*
+
+# IDE and Editor files
+# VSCode
+.vscode/
+*.code-workspace
+.history/
+
+# Vim
+*.swp
+*.swo
+*~
+.*.swp
+.*.swo
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# CLion
+.idea/
+cmake-build-*/
+
+# XCode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Windows
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Test files and outputs
+test_output.txt
+*.log
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Memory leak check files
+*.valgrind
+*.leaks
+
+# Coverage files
+*.gcno
+*.gcda
+*.gcov
+coverage/
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Documentation build files
+docs/html/
+docs/latex/
+*.aux
+*.toc
+*.pdf
+*.dvi
+
+# Archive files (unless intentional)
+*.tar
+*.tar.gz
+*.zip
+*.rar
+
+# Dependency directories
+.deps/
+build/
+dist/
+
+# Personal notes and TODO files
+TODO.txt
+NOTES.txt
+notes/
+.notes/ 
